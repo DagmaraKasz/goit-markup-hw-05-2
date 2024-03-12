@@ -1050,12 +1050,12 @@ który jest utworzony za pomocą znacznika div*/
     background-color:#404bbf;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #F4F4FD;
+    fill: #Ffffff;
 }
 .modal-check:checked+.terms-conditions .accept-icon {
     background-color: var(--ocean-color);
     border: none;
-    fill: #F4F4FD;
+    fill: #Ffffff;
 }
 .privacy-policy {
     color: #4d5ae5;
