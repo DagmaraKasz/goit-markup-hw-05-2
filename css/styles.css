@@ -112,7 +112,7 @@ a {
     min-width: 169px;
     border: none;
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .button-index {
@@ -129,7 +129,9 @@ a {
 .button-index:hover {
     color: var(--white-color);
     background-color: var(--ocean-color);
+    background-color:#404bbf;
     cursor: pointer;
+    border: none;
 }
 
 /* tło dla tekstu effective solutions w HERO SECTION index.html */
@@ -917,12 +919,14 @@ który jest utworzony za pomocą znacznika div*/
     border: none;
     background-color: #404bbf;
     fill: var(--white-color);
+    fill: #ffffff;
 }
 
 .close-btn:focus {
     background-color: #404bbf;
     border: none;
     fill: var(--white-color);
+    fill: #ffffff;
 }
 
 .is-hidden {
@@ -955,7 +959,7 @@ który jest utworzony za pomocą znacznika div*/
     margin-bottom: 8px;
 }
 
-.form-label {
+.label-modal {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -963,37 +967,11 @@ który jest utworzony za pomocą znacznika div*/
     display: block;
     margin-bottom: 4px;
 }
-
-
-
-.form-comment {
-    width: 100%;
-    height: 120px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    display: flex;
-    flex-direction: column;
-    color: var(--light-slate-color);
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    background-color: transparent;
-    resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-input,
-textarea,
-button {
-    font-family: inherit;
-    line-height: inherit;
-    padding: 8px;
-}
 /* ikonki podświetlały się razem z ramką */
 .input-field:focus+.modal-icon {
     fill: var(--iris-color);
 }
+
 .data-field {
     position: relative;
 }
@@ -1012,6 +990,7 @@ button {
     border-color: #4D5AE5;
     fill: #4D5AE5;
 }
+
 .modal-icon {
     position: absolute;
     left: 16px;
@@ -1025,15 +1004,16 @@ button {
     fill: #4D5AE5;
 }
 
-
-.form-button {
-    align-self: flex-start;
+.field-comment {
+    margin-bottom: 16px;
 }
 
-
-.form-input {
+.field-text {
     width: 100%;
-    height: 40px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -1043,23 +1023,7 @@ button {
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-.form-input-comment {
-    width: 100%;
-    height: 80px;
-    color: rgba(46, 47, 66, 0.4);
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    background-color: transparent;
-    padding: 8px 16px;
-    outline: transparent;
-    resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.form-comment:focus {
+.field-text:focus {
     border-color: #4D5AE5;
 }
 
@@ -1093,9 +1057,7 @@ button {
 }
 .privacy-policy {
     color: #4d5ae5;
-    text-decoration-line: underline;
 }
-
 .form-button {
     display: block;
     min-width: 169px;
@@ -1118,22 +1080,26 @@ button {
     fill: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* 
-label {
+
+/* Koniec formularza w oknie modalnym */
+
+/* .form-comment {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
-}
-
-input::placeholder {
-    color: rgb(225, 228, 228);
-    font-weight: 500;
-}
-
-input:hover::placeholder,
-input:focus::placeholder {
-    color: rgb(43, 42, 41);
+    color: var(--light-slate-color);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
+
+
 
 /* Koniec Formularz */
 
